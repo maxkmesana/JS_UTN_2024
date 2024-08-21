@@ -16,7 +16,6 @@ function reverseArrayInPlace(array){
     for(let i=0; i<=array.length; i++){
         if(arrayRightIndex < i) break;
         if(i === arrayRightIndex) break;
-        console.log(arrayRightIndex);
 
         const leftElement = array[i];
         array[i] = array[arrayRightIndex];
@@ -26,8 +25,9 @@ function reverseArrayInPlace(array){
 }
 
 let array = [1,2,3,4,5,6,7,8,9];
-//  
-// console.log(reverseArray(array));
-// console.log(array);
+
+console.log(reverseArray(array));
+console.log(array);
+
 reverseArrayInPlace(array);
 console.log(array);
