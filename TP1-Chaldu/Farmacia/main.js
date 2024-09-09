@@ -1,8 +1,8 @@
 "use strict"
 
-import { Inventory } from "./Farmacia/Inventory.js";
-import { Medicament } from "./Farmacia/Medicament.js";
-import { Sale } from "./Farmacia/Sale.js"
+import { Inventory } from "./Inventory.js";
+import { Medicament } from "./Medicament.js";
+import { Sale } from "./Sale.js"
 
 let inventory = new Inventory();
 mainMenu();
