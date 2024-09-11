@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP DOM - Lab IV</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cart Management</h1>
+    </header>
+    <div class="container">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Product name...">
+            
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" placeholder="Product quantity...">
+
+            <label for="price">Price</label>
+            <input type="text" id="price" placeholder="Product price...">
+
+            <button id="add-button">Add product</button>
+        </div>
+
+        <div>
+            <h2 id="total">Total price: 0</h2>
+            <h2>Cart Items</h2>
+            <span>
+                <input type="text" id="filter-bar" placeholder="Search by name...">
+                <button id="empty-list">Empty list!</button>
+            </span>
+            <ul id="cart-content-list"></ul>
+        </div>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
