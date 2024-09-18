@@ -3,9 +3,12 @@ const url = "http://localhost:3000/productos";
 //GET
 export async function getProductos() {
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
+    const response = await fetch(url).then(response => response.json())
+    .then(data => {
+      console.log(data);  // Here, 'data' is the parsed JSON object
+    });
+    // const data = await response.json();
+    // return data;
   } catch (error) {
     console.error("Error fetching productos:", error);
     throw error;
@@ -25,7 +28,7 @@ export async function getProductos2() {
     } else {
       console.error("Error al obtener productos:", error.message);
     }
-    throw error;
+    throw error; // ????? why
   }
 }
 
