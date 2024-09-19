@@ -3,7 +3,7 @@ Se espera que la logica este separada en distintos modulos
 */
 // import { User, ToDo, Post, Comment, Album } from "./js/docs/types.js";
 
-import { getUsers, populateUsers } from "./js/api/userEndpoint.js";
+import { getUsers, populateUsers } from "./js/api/userRequests.js";
 
 const userList = [];
 const toDoList = [];
