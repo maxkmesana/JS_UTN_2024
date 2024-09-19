@@ -54,6 +54,8 @@ export class User{
     }
 }
 
+
+
 /**
 * @typedef {Object} ToDo
 * @prop {number} userId references a User
