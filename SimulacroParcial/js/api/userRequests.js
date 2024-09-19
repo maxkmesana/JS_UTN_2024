@@ -3,8 +3,6 @@
 const url = "http://localhost:3000/users";
 const api = "https://jsonplaceholder.typicode.com/users";
 
-// "?id={x}"
-
 // GET Request
 export async function getUsers(id="") {
     if(id !== "") url + `?id=${id}`;
