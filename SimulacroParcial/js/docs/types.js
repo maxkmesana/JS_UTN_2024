@@ -29,6 +29,10 @@ export class User{
         this.company = company;
     }
 
+    toString(){
+        console.log(`Username: ${this.username} - Name: ${this.name}`);
+    }
+
     get getName(){
         return this.name;
     }

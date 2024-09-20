@@ -2,7 +2,7 @@ import { deleteTodo, getTodosByUserId, getTodos, postToDo, putTodo } from "./req
 import { getUsers, populateUsers } from "./requests/userRequests.js";
 import { ToDo } from "./docs/types.js";
 
-// getTodos("3").then(data => console.log(data));
+getTodos("6").then(data => console.log(data));
 // deleteTodo("3").then(data => console.log(data));
 
 // POST TEST
@@ -13,8 +13,8 @@ import { ToDo } from "./docs/types.js";
 // putTodo("4", updatedTodo).then(data => console.log(data));
 
 
-getTodosByUserId("1").then(data => {
-    for(let toDo of data){
-        console.log(toDo);
-    }
-});
+// getTodosByUserId("1").then(data => {
+//     for(let toDo of data){
+//         console.log(toDo);
+//     }
+// });
