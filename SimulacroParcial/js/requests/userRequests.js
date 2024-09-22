@@ -29,7 +29,7 @@ export async function populateUsers(){
             await fetch(url,{
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
-                body: user.stringify()
+                body: JSON.stringify(user)
             });
         }
     } catch (error) {
